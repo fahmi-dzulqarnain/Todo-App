@@ -1,0 +1,12 @@
+<h1>Register</h1>
+
+@if (errorMessage) {
+<p>{{ errorMessage }}</p>
+}
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="flex-column">
+    <input type="text" placeholder="Full Name" formControlName="fullName" />
+    <input type="email" placeholder="Email" formControlName="email" />
+    <input type="password" placeholder="Password" formControlName="password" />
+    <button type="submit">Register</button>
+</form>

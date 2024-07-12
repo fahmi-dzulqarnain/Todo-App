@@ -1,0 +1,19 @@
+<header class="header">
+    <h1>Todo List</h1>
+    <input
+        autofocus
+        class="new-todo"
+        type="text"
+        placeholder="What needs to be done?"
+        [value]="title"
+        (keyup)="changeTitle($event)"
+        (keyup.enter)="addTodo()">
+    <input
+        autofocus
+        class="new-todo-description"
+        type="text"
+        placeholder="Description"
+        [value]="description"
+        (keyup)="changeDescription($event)"
+        (keyup.enter)="addTodo()">
+</header>
